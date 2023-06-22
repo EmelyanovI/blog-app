@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Blog</title>
+</head>
+<body>
+    <section id="blog">
+        <div class="container">
+            <div class="blog__wrapper">
+                <div class="blog__new-post">
+                    <div class="blog__title">Новый пост</div>
+                    <input 
+                    class="blog__header text-style" 
+                    id="blog__header" 
+                    type="text">
+                    <input 
+                    class="blog__text-post text-style" 
+                    id="blog__text-post" 
+                    type="text">
+                    <button class="new-post__btn" 
+                    id="new-post__btn">Опубликовать</button>
+                </div>
+                <div class="feed__post">
+                    <div class="blog__title">Лента</div>
+                    <div class="feed__wrapper">
+                        <time class="feed__time">20.05.2023 11:00</time>
+                        <h3 class="feed__title text-style">Привет Мир</h3>
+                        <p class="feed__text text-style">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet auctor iaculis.
+                          Aliquam viverra ultrices dui.
+                          Aenean dolor dolor, congue eget congue non, varius non urna.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
