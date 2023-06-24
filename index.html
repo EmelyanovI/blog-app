@@ -14,33 +14,42 @@
 <body>
     <section id="blog">
         <div class="container">
-            <div class="blog__wrapper">
-                <div class="blog__new-post">
+            <div class="post__wrapper">
+                <div class="post__new-post">
                     <div class="blog__title">Новый пост</div>
                     <input 
-                    class="blog__header text-style" 
-                    id="blog__header" 
+                    class="post__header text-style" 
+                    id="post__header" 
+                    maxlength="20"
+                    placeholder="Заголовок"
                     type="text">
-                    <input 
-                    class="blog__text-post text-style" 
-                    id="blog__text-post" 
-                    type="text">
+                    <!--<input
+                    class="post__text-post text-style" 
+                    id="post__text-post" 
+                    maxlength="200"
+                    type="text">-->
+                    <textarea 
+                    class="post__text text-style"
+                    id="post__text"
+                    name="coment"
+                    maxlength="200"
+                    cols="0" rows="0"></textarea>
                     <button class="new-post__btn" 
                     id="new-post__btn">Опубликовать</button>
                 </div>
                 <div class="feed__post">
                     <div class="blog__title">Лента</div>
-                    <div class="feed__wrapper">
-                        <time class="feed__time">20.05.2023 11:00</time>
+                    <div class="feed__posts" id="feed__posts">
+                        <h2 class="feed__blank-tape text-style">Здесь мог быть ваш пост...</h2>
+                        <!--<time class="feed__time">20.05.2023 11:00</time>
                         <h3 class="feed__title text-style">Привет Мир</h3>
                         <p class="feed__text text-style">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet auctor iaculis.
                           Aliquam viverra ultrices dui.
-                          Aenean dolor dolor, congue eget congue non, varius non urna.</p>
+                          Aenean dolor dolor, congue eget congue non, varius non urna.</p>-->
                 </div>
             </div>
         </div>
     </section>
-
     <script src="index.js"></script>
 </body>
 </html>

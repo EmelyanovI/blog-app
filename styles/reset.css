@@ -56,3 +56,6 @@ button{
 	cursor: pointer;
 	font-family: inherit;
 }
+input, textarea{
+	box-sizing: border-box;
+}
