@@ -19,13 +19,14 @@
     line-height: 48px;   
     letter-spacing: -0.03em; 
 }
-.text-title-style{
+.feed__title{
     font-weight: 700;
     font-size: 30px;
     line-height: 38px;   
     letter-spacing: -0.03em;
 }
-.text-style{
+.post__header, .post__text,
+.feed__blank-tape, .feed__text{
     font-weight: 400;
     font-size: 25px;
     line-height: 30px;   
@@ -33,7 +34,7 @@
 }
 .post__new-post{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     position: relative;
     gap:20px;
@@ -51,14 +52,28 @@
     border: 1px solid #000000;
     border-radius: 4px;
     padding: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 .post__header:focus,
 .post__text:focus{
     border-color: #0094FF;
     outline: none;
 }
+.validation-post-header,
+.validation-post-text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;   
+    letter-spacing: -0.03em;
+    color: #FF0000;
+    padding: 0 0 0 12px;
+}
+.validation-post-header__hidden,
+.validation-post-text__hidden{
+    display: none;
+}
 .feed__blank-tape{
-    opacity: .5;
+    opacity: .6;
 }
 .feed__post{
     display: flex;

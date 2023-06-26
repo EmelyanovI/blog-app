@@ -17,35 +17,47 @@
             <div class="post__wrapper">
                 <div class="post__new-post">
                     <div class="blog__title">Новый пост</div>
+
                     <input 
-                    class="post__header text-style" 
+                    class="post__header" 
                     id="post__header" 
-                    maxlength="20"
+                    maxlength="10"
                     placeholder="Заголовок"
                     type="text">
-                    <!--<input
-                    class="post__text-post text-style" 
-                    id="post__text-post" 
-                    maxlength="200"
-                    type="text">-->
+
+                    <div class="validation-post-header 
+                    validation-post-header__hidden" 
+                    id="validation-post-header">
+                        <!--<div class="validation-post-header__min">
+                            Заголовок менее 5 символов</div>
+                        <div class="validation-post-header__max">
+                             Достигнут лимит в 30 символов:(</div>-->
+                    </div>
+
                     <textarea 
-                    class="post__text text-style"
+                    class="post__text"
                     id="post__text"
                     name="coment"
-                    maxlength="200"
+                    placeholder="Напиши пост"
                     cols="0" rows="0"></textarea>
+
+                    <div class="validation-post-text 
+                    validation-post-text__hidden" 
+                    id="validation-post-text">
+                        <!--<div class="validation-post-text__min">
+                            Пост менее 10 символов</div>
+                        <div class="validation-post-text__max">
+                            Достигнут лимит в 200 символов:(</div>-->
+                    </div>
+
                     <button class="new-post__btn" 
                     id="new-post__btn">Опубликовать</button>
                 </div>
                 <div class="feed__post">
                     <div class="blog__title">Лента</div>
                     <div class="feed__posts" id="feed__posts">
-                        <h2 class="feed__blank-tape text-style">Здесь мог быть ваш пост...</h2>
-                        <!--<time class="feed__time">20.05.2023 11:00</time>
-                        <h3 class="feed__title text-style">Привет Мир</h3>
-                        <p class="feed__text text-style">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet auctor iaculis.
-                          Aliquam viverra ultrices dui.
-                          Aenean dolor dolor, congue eget congue non, varius non urna.</p>-->
+                        <h2 class="feed__blank-tape">
+                            Здесь мог быть ваш пост...</h2>
                 </div>
             </div>
         </div>
