@@ -36,10 +36,10 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    position: relative;
-    gap:20px;
+    gap: 14px;
 }
 .post__header{
+    position: relative;
     width: 400px;
     height: 50px;
     border: 1px solid #000000;
@@ -47,26 +47,32 @@
     padding: 10px;
 }
 .post__text{
+    display: block;
+    position: relative;
     width: 400px;
     min-height: 200px;
     border: 1px solid #000000;
     border-radius: 4px;
     padding: 10px;
     font-family: 'Roboto', sans-serif;
+    resize: vertical;
 }
 .post__header:focus,
 .post__text:focus{
     border-color: #0094FF;
     outline: none;
 }
+.red__text{
+    color: #ff0000;
+}
 .validation-post-header,
 .validation-post-text{
     font-weight: 400;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 25px;   
     letter-spacing: -0.03em;
-    color: #FF0000;
-    padding: 0 0 0 12px;
+    text-align: end;
+    color: gray;
 }
 .validation-post-header__hidden,
 .validation-post-text__hidden{
@@ -105,11 +111,19 @@
     text-align: center;
     text-decoration: none;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
-.new-post__btn:hover{/*изменение цвета кнопки*/ 
+.new-post__btn:hover{
     color: #0094FF;
     background-color: #ffffff;
 }
 .new-post__btn:active{
     box-shadow: 0 0 6px 6px #0095ff90;
+}
+.new-post__btn:disabled{
+    border: none;
+    color: #00000090;
+    background-color: #e4eaee;
+    box-shadow: none;
+    cursor: not-allowed;
 }
