@@ -1,3 +1,6 @@
+body{
+    background-color: #f7fbff;
+}
 .container{
     max-width: 1185px;
     margin: 0 auto;
@@ -7,6 +10,14 @@
     display: flex;
     margin: 40px 0 40px 0;
     font-family: 'Roboto', sans-serif;
+}
+.title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 38px;   
+    letter-spacing: -0.03em;
+    text-align: center;
+    padding: 0 0 30px 0;
 }
 .post__wrapper{
     display: flex;
@@ -73,10 +84,6 @@
     letter-spacing: -0.03em;
     text-align: end;
     color: gray;
-}
-.validation-post-header__hidden,
-.validation-post-text__hidden{
-    display: none;
 }
 .feed__blank-tape{
     opacity: .6;
